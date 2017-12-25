@@ -54,6 +54,7 @@ public class DbConfig {
         clickHouseProperties.setPassword(clickhousePassword);
         clickHouseProperties.setCompress(compress);
         clickHouseProperties.setDecompress(compress);
+        clickHouseProperties.setConnectionTimeout(100000);
         return new ClickHouseDataSource(url, clickHouseProperties);
     }
 
